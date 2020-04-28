@@ -1,0 +1,7 @@
+Obtener los parámetros GET de la URL recibida con JavaScript
+
+1. Obtener la URL, en concreto la parte de los parámetros.
+window.location.search ==> search devuelve la parte de los parámetros con el símbolo ?, al añadirle el argumento 1, devuelve los parámetros sin el símbolo ?. La parte de la URL que contiene los parámetros (ej ?id=1) se denomina query string de la URL.
+    |
+    |
+   Si hay varios parámetros, estos van separados por &. Uso la función split("&"), que devuelve un array de los elementos separados por ese caracter. Si sólo tengo un parámetro, entonces utilizaré la función split("="), en el array resultante (parametros), el valor que busco será parametros[1].

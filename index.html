@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Usuarios Listas</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/ajax.js"></script>
+</head>
+<body>
+<!--Container fluid para que contenga todo el ancho de pantalla-->
+<header class="container-fluid bg-primary text-white">
+    <h1 class="text-center">Ejemplo de AJAX con BootStrap</h1>
+</header>
+<section class="container">
+    <div class="row">
+        <div class="col text-center">
+            <h3>Usuarios</h3>
+            <div id="divtablaUsuario" class="d-none">
+                <table id="tablaUsuario" class="table w-75 mx-auto">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>email</th>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Enlace</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <button id="boton" class="btn-warning btn">Cargar lista usuarios</button>
+        </div>
+        <div class="col text-center">
+            <h3>Productos</h3>
+            <div id="divtablaProductos" class="d-none">
+                <table id="tablaProducto" class="table w-75 mx-auto">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Año</th>
+                        <th>Color</th>
+                        <th>Valor</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <button id="boton2" class="btn btn-warning">Cargar lista de productos</button>
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>
